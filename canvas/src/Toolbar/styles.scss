@@ -1,0 +1,40 @@
+.toolbar {
+  &_container {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    left: 0;
+    padding: 5px;
+    background: #feffff;
+    top: 50%;
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+    transform: translateY(-50%);
+  }
+  &_action-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 4px;
+    width: 40px;
+    height: 40px;
+    padding: 10px;
+
+    & > svg {
+      width: 35px;
+      height: 35px;
+      stroke: #000000;
+    }
+
+    &[data-active="true"] {
+      background-color: #e8ecff;
+      & > svg {
+        fill: #4262ff;
+        color: #4262ff;
+        stroke: #4262ff;
+      }
+    }
+  }
+}
